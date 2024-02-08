@@ -25,6 +25,11 @@ namespace MVCBlogSiteProje.Controllers
             return View(model);
 
         }
+        public PartialViewResult KategorileriGetir()
+        {
+            var model = context.Categories.ToList();
+            return PartialView("_PartialUstMenu", model);
+        }
 
 
     }

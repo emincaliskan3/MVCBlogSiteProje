@@ -10,10 +10,10 @@
 </head>
 
 <body class="arkaplan">
-    @Html.Partial("_PartialUstMenu")
+    @Html.Action("KategorileriGetir", "Home")
     <div class="container body-content">
         @RenderBody()
-        
+
         @Html.Partial("_PartialFooter")
     </div>
     <style>
